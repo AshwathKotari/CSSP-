@@ -1,0 +1,71 @@
+.active{
+    background-color: rgb(64, 255, 0);
+}
+
+.nav{
+    background-color: cadetblue;
+    
+    
+    
+    animation: rotateNav 9s linear infinite normal both; /* Apply the animation */
+
+}
+@keyframes rotateNav {
+    0% {
+      transform: translate(0px,0px); /* Start from 0 degrees */
+    }
+  
+      25%{
+        transform:translate(100px,50px) ;
+      }
+
+      50% {
+        transform: transform(0px,0px); /* Start from 0 degrees */
+      }
+
+      75%{
+        transform:translate(-100px,50px) ;
+      }
+
+      100% {
+        transform: translate(0px,0px); /* Start from 0 degrees */
+      }
+   
+
+  }
+  
+
+
+.container{
+    display: block;
+}
+.ul{
+padding: 0px;
+margin: 0px;
+
+padding: 10px 10px 10px 30px;
+
+
+margin-left: 10px;
+text-align: center;
+list-style-type: upper-roman;
+text-decoration: underline;
+text-decoration-color: rgb(211, 49, 49);
+
+
+}
+.li{
+    letter-spacing: 5px ;
+    text-shadow: 2px 2px 4px blueviolet;
+}
+
+@media  (max-width:768px) {
+
+    .nav{
+    background-color: cadetblue;
+    transform: rotate(90deg);
+    
+}
+
+}
+
